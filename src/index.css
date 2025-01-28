@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities {
+  /* Custom Drop Shadows */
+  /* Keyframes for Box Shadow Animation */
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 10px 10px 10px rgba(120, 132, 150, 0.5);
+    }
+    50% {
+      box-shadow: 10px 10px 10px rgba(112, 123, 134, 0.5);
+    }
+    100% {
+      box-shadow: 10px 10px 10px rgba(110, 128, 158, 0.5);
+    }
+  }
+
+  /* Utility Class for Box Shadow Animation */
+  .animate-shadow-pulse {
+    animation: shadow-pulse 1.5s ease-in-out infinite;
+  }
+
+  /* Hover Box Shadow Animation */
+  .hover-shadow {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.7); /* Example of green shadow on hover */
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
