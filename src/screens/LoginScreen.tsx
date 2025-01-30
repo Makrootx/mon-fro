@@ -17,6 +17,7 @@ const Login = () => {
       await login(email, password);
       alert("Logged in successfully!");
       navigate("/", { replace: true });
+      window.location.reload();
     } catch (error) {
       const axiosError: AxiosError = error as any;
       setError(

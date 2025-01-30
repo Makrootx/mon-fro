@@ -11,7 +11,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   lastModified,
   userName,
 }) => (
-  <div className="border rounded p-4 shadow-md hover:scale-102 cursor-pointer transition duration-150">
+  <div className="border rounded p-4 shadow-md hover:scale-101 cursor-pointer transition duration-150">
     <div className="flex justify-between">
       <div className="flex items-center">
         <h3 className="font-bold text-lg">{title}</h3>
